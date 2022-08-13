@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FREAKY FITNESS WORLD</title>
+</head>
+<link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
+<style>
+    /*RESET*/
+    body {
+        font-family: 'Baloo Bhai', cursive;
+        margin: 0px;
+        padding: 0px;
+        background: url("images/bg.jpg");
+        height: 200px;
+        color: white;
+    }
+
+    .left {
+        display: inline-block;
+        /*border: 2px solid red;*/
+        position: absolute;
+        left: 34px;
+        top: 20px;
+        color: white;
+    }
+
+    .left img {
+        width: 49px;
+        filter: invert(100%);
+
+    }
+
+    .left div {
+        line-height: 9px;
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .mid {
+        display: block;
+        /*border: 2px solid green;*/
+        width: 50%;
+        margin: 20px auto;
+    }
+
+    .right {
+        display: inline-block;
+        /*border: 2px solid yellow;*/
+        position: absolute;
+        right: 34px;
+        top: 20px;
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 20px;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 7px 7px;
+    }
+
+    .navbar li a:hover {
+        text-decoration: underline;
+        color: grey;
+    }
+
+    .btn {
+        font-family: 'Baloo Bhai', cursive;
+        margin: 0px 2p;
+        background-color: black;
+        color: white;
+        padding: 6px 2px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: grey;
+    }
+
+    .container {
+        border: 2px solid white;
+        margin: 70px 90px;
+        padding: 25px 30px;
+        width: 30%;
+        border-radius: 12px;
+    }
+
+    .form-group input {
+        font-family: 'Baloo Bhai', cursive;
+        text-align: center;
+        display: block;
+        width: 330px;
+        padding: 1px;
+        border: 2px solid black;
+        margin: 9px auto;
+        border-radius: 9px;
+        font-size: 18px;
+    }
+
+    .container h1 {
+        text-align: center;
+    }
+
+    .container button {
+        display: block;
+        width: 20%;
+        margin: 6% 36%;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!--left box for logo-->
+        <div class="left">
+            <img src="images/logo.png" alt="">
+            <div>FREAKY FITNESS</div>
+        </div>
+        <!--mid box for navbar-->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="#">FITNESS CALCULATOR</a></li>
+                <li><a href="#">CONTACT US</a></li>
+            </ul>
+        </div>
+        <!--right box for buttons-->
+        <div class="right">
+            <button class="btn">CALL US NOW</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1> BEST GYM OF ROHINI . JOIN NOW !</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text-name" placeholder="ENTER YOUR NAME">
+            </div>
+            <div class="form-group">
+                <input type="text-name" placeholder="ENTER YOUR AGE">
+            </div>
+            <div class="form-group">
+                <input type="text-name" placeholder="ENTER YOUR GENDER">
+            </div>
+            <div class="form-group">
+                <input type="text-name" placeholder="ENTER YOUR LOCALITY">
+            </div>
+            <div class="form-group">
+                <input type="text-name" placeholder="ENTER YOUR PHONE NO">
+            </div>
+            <button class="btn">SUBMIT</button>
+        </form>
+    </div>
+</body>
+
+
+</html>
